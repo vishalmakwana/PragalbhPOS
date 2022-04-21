@@ -1,0 +1,136 @@
+{
+    "categories": [
+        "catA",
+        "catB",
+        "catC",
+        "catD",
+        "catE"
+    ],
+    "items": [
+        {
+            "categoryName": "catA",
+            "items": [
+                {
+                    "itemName": "catA item1",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catA item2",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catA item3",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catA item4",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catA item5",
+                    "itemPrice": 50
+                }
+            ]
+        },
+        {
+            "categoryName": "catB",
+            "items": [
+                {
+                    "itemName": "catB item1",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catB item2",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catB item3",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catB item4",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catB item5",
+                    "itemPrice": 50
+                }
+            ]
+        },
+        {
+            "categoryName": "catC",
+            "items": [
+                {
+                    "itemName": "catC item1",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catC item2",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catC item3",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catC item4",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catC item5",
+                    "itemPrice": 50
+                }
+            ]
+        },
+        {
+            "categoryName": "catD",
+            "items": [
+                {
+                    "itemName": "catD item1",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catD item2",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catD item3",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catD item4",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catD item5",
+                    "itemPrice": 50
+                }
+            ]
+        },
+        {
+            "categoryName": "catE",
+            "items": [
+                {
+                    "itemName": "catE item1",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catE item2",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catE item3",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catE item4",
+                    "itemPrice": 50
+                },
+                {
+                    "itemName": "catE item5",
+                    "itemPrice": 50
+                }
+            ]
+        }
+    ]
+}
