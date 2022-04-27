@@ -21,6 +21,7 @@ function ContextProvider(props) {
     // );
 
     // response interceptor intercepting 401 responses, refreshing token and retrying the request
+    axios.defaults.baseURL = `${axiosConfig.baseURL}`
     axios.interceptors.response.use(
         (response) => response,
         async (error) => {
@@ -55,8 +56,8 @@ function ContextProvider(props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [snak_open])
 
-    const logMessage = ({ msg, severity }) => {
-        setSnackContent({ msg, severity })
+    const logMessage = ({ msg, severity, vertical, horizontal }) => {
+        setSnackContent({ msg, severity, vertical, horizontal })
         setSnackOpen(msg && Object.keys(msg).length > 0 ? true : false)
     }
     return (

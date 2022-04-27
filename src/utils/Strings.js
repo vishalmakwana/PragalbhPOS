@@ -1,9 +1,13 @@
 import React from 'react'
 
 const Strings = {
-    MENU_INVOICE_TITLE: "Invoice",
-    LOGOUT_TITLE: "Logout",
+    MENU_HOME_TITLE: "Home",
+    MENU_PRODUCTS_TITLE: "Products",
+    MENU_CATEGORIES_TITLE: "Categories",
+    MENU_PRODUCTS_TITLE: "Products",
+    MENU_INVOICES_TITLE: "Invoices",
     MENU_DASHBOARD_TITLE: "Dashboard",
+    LOGOUT_TITLE: "Logout",
     MENU_INSIGHTS_TITLE: "Insights",
     MENU_REMEDIAL_ACTION_TITLE: "Remedial Action",
     MENU_DATASOURCE_TITLE: "Data Source",
@@ -24,6 +28,7 @@ const Strings = {
     COLUMN_DATA_SOURCE_TITLE: "Source",
     COLUMN_NAME: "Name",
     COLUMN_SOURCE: "Source",
+    COLUMN_INVOICE_NO: "Invoice No.",
     COLUMN_ADDRESS: "Address",
     COLUMN_CONNECTION_TYPE: "Type",
     COLUMN_EMAIL: "Email",
@@ -33,6 +38,8 @@ const Strings = {
     COLUMN_USER_NAME: "User Name",
     COLUMN_PASSWORD: "Password",
     COLUMN_PORT: "Port",
+    COLUMN_PRODUCT_NAME: "Product Name",
+    COLUMN_INVOICE_DATE: "Invoice Date",
     COLUMN_DATA_CONNECTION_TITLE: "Connection",
     COLUMN_DATA_CONNECTION_SOURCE: "Source",
     COLUMN_JOB_STATUS: "Job Status",
@@ -176,7 +183,7 @@ const Strings = {
     COLUMN_MESSAGE: "Message",
 
     // ******************************************************
-    COLUMN_INVOICE_ITEM_NAME: "Item Name",
+    COLUMN_INVOICE_PRODUCT_NAME: "Product Name",
     COLUMN_INVOICE_ITEM_QUANTITY: "Quantity",
     COLUMN_INVOICE_ITEM_PRICE: "Price",
     COLUMN_INVOICE_ITEM_TOTAL: "Total",

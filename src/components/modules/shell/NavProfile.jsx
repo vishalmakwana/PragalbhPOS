@@ -1,12 +1,15 @@
 import React from 'react'
 import { IconButton, Tooltip } from '@mui/material'
 import { ExitToAppRounded } from '@mui/icons-material'
-import { Strings } from '@psoftcs'
+import { appSettings, Strings, useLocalStorage } from '@psoftcs'
+import { useNavigate } from 'react-router-dom'
 export default function NavProfile() {
-    // const { oktaAuth } = useOktaAuth()
+    const navigate = useNavigate()
+    const { clearAll } = useLocalStorage()
+    const { routeConfig } = appSettings
     const logout = async (e) => {
-        // Will redirect to Okta to end the session then redirect back to the configured `postLogoutRedirectUri`
-        // await oktaAuth.signOut();
+        clearAll()
+        navigate(routeConfig.login)
     };
     return (
         <Tooltip title={Strings.LOGOUT_TITLE}>

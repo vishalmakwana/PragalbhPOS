@@ -13,6 +13,7 @@
     "axios": "^0.26.0",
     "axios-hooks": "^3.0.1",
     "env-cmd": "^10.1.0",
+    "firebase": "^9.6.11",
     "lru-cache": "^7.4.1",
     "material-ui-confirm": "^3.0.3",
     "moment": "^2.29.1",

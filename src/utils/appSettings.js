@@ -10,27 +10,42 @@ const appSettings = {
     //     disableHttpsCheck: JSON.parse(`${process.env.REACT_APP_OKTA_DISABLE_HTTPS_CHECK}`),
     // },
     axiosConfig: {
-        baseURL: `http://localhost:3000`,
+        baseURL: `${process.env.REACT_APP_API_BASE_URL}`,
         validateStatus: false
     },
     routeConfig: {
-        invoice: "/invoice"
+        login: "/Login",
+        register: "/Register",
+        home: "/Home",
+        categories: "/categories",
+        products: "/products",
+        invoices: "/invoices",
     },
     endpointConfig: {
         categories: {
             getAll: '/categories',
-            postcategories: '/categories',
-            updateCategories: '/categories',
+            addCategories: '/categories',
+            updateCategories: '/categories/{0}',
             getCategoriesById: '/categories/{0}',
             deleteCategoriesById: '/categories/{0}',
         },
-        items: {
-            getAll: '/items',
-            postItems: '/items',
-            updateItems: '/items',
-            getItemsById: '/items/{0}',
-            deleteItemsById: '/items/{0}',
+        products: {
+            getAll: '/products',
+            addProducts: '/products',
+            updateProducts: '/products/{0}',
+            getProductsById: '/products/{0}',
+            deleteProductsById: '/products/{0}',
         },
+        invoices: {
+            getAll: '/invoices',
+            addInvoices: '/invoices',
+            updateInvoices: '/invoices/{0}',
+            getInvoicesById: '/invoices/{0}',
+            deleteInvoicesById: '/invoices/{0}',
+        },
+        authUsers: {
+            getAll: '/users',
+        }
 
     },
     fieldGroupTypes: {
@@ -73,7 +88,9 @@ const appSettings = {
     defaultDuration: 6000,
     defaultSnackContent: {
         severity: 'info',
-        msg: ''
+        msg: '',
+        vertical: "bottom",
+        horizontal: "left"
     },
     documentsURL: `${process.env.REACT_APP_BASE_URL}/documents/`,
     calendarConfig: {

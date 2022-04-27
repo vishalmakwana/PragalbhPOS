@@ -32,10 +32,13 @@ export const validator = {
 }
 
 export const useMenus = () => {
-    const { invoice } = appSettings.routeConfig
+    const { home, categories, products, invoices } = appSettings.routeConfig
     const {
         MENU_DASHBOARD_TITLE,
-        MENU_INVOICE_TITLE
+        MENU_HOME_TITLE,
+        MENU_PRODUCTS_TITLE,
+        MENU_CATEGORIES_TITLE,
+        MENU_INVOICES_TITLE
 
     } = Strings
 
@@ -47,10 +50,28 @@ export const useMenus = () => {
             icon: Dashboard,
             children: [
                 {
-                    id: "dashboard_insight",
-                    labelText: MENU_INVOICE_TITLE,
+                    id: "dashboard_home",
+                    labelText: MENU_HOME_TITLE,
                     isVisible: true,
-                    navigate: invoice,
+                    navigate: home,
+                },
+                {
+                    id: "dashboard_categories",
+                    labelText: MENU_CATEGORIES_TITLE,
+                    isVisible: true,
+                    navigate: categories,
+                },
+                {
+                    id: "dashboard_products",
+                    labelText: MENU_PRODUCTS_TITLE,
+                    isVisible: true,
+                    navigate: products,
+                },
+                {
+                    id: "dashboard_invoices",
+                    labelText: MENU_INVOICES_TITLE,
+                    isVisible: true,
+                    navigate: invoices,
                 },
             ],
         },

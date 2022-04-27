@@ -4,11 +4,14 @@ import { Box, Toolbar } from "@mui/material"
 import {
   appSettings,
   NavTabs,
-  Invoice
+  Categories,
+  Invoices,
+  Products,
+  Home,
 } from "@psoftcs"
 
 function Main({ mainClassName }) {
-  const { invoice } = appSettings.routeConfig
+  const { home, categories, products, invoices } = appSettings.routeConfig
   const { pathname } = useLocation()
   const navigate = useNavigate()
 
@@ -18,7 +21,11 @@ function Main({ mainClassName }) {
     <Box component="div" sx={mainClassName}>
       <Toolbar />
       <Routes>
-        <Route path={invoice} element={<Invoice />} />
+
+        <Route path={home} element={<Home />} />
+        <Route path={categories} element={<Categories />} />
+        <Route path={products} element={<Products />} />
+        <Route path={invoices} element={<Invoices />} />
       </Routes>
     </Box>
   )
